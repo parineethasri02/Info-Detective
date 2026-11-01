@@ -1,0 +1,8 @@
+{
+  "name": "INFO-DETECTIVE",
+  "description": "AI-assisted information gap detection platform: uncover what's missing, conflicting, outdated, or unverified before you decide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

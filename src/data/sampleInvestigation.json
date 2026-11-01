@@ -1,0 +1,455 @@
+{
+  "id": "demo-scholarship-2026",
+  "title": "Global Excellence Scholarship Application 2026",
+  "categoryId": "scholarships",
+  "categoryName": "Scholarships",
+  "mainQuestion": "What are the exact eligibility criteria, deadlines, and renewal terms?",
+  "researchObjective": "Verify if I qualify, confirm submission deadline, and ensure I can renew it for all four years without conflicting with other financial aid.",
+  "optionalContext": "Applying for undergraduate engineering funding. Found two articles online and one student forum comment with differing dates.",
+  "createdAt": "2026-10-15T09:30:00Z",
+  "updatedAt": "2026-10-15T10:15:00Z",
+  "isDemo": true,
+  "status": "analyzed",
+  "analysisEngine": "rule-based",
+  "sources": [
+    {
+      "id": "src-demo-a",
+      "title": "Ministry of Higher Education — Scholarship Circular (2025 Cycle)",
+      "domain": "mohe.gov.example",
+      "url": "https://mohe.gov.example/scholarships/circular-2025-09",
+      "publicationDate": "2024-09-15",
+      "retrievedDate": "2026-10-10",
+      "sourceType": "official",
+      "cycleOrYear": "2025 Cycle",
+      "authorOrOrg": "State Department of Higher Education",
+      "content": "Official Announcement: Global Excellence Undergraduate Scholarship (Cycle 2025). Eligibility criteria require applicants to have achieved a minimum cumulative GPA of 3.8 on a 4.0 scale and be under 22 years of age at the time of enrollment. The final application submission deadline is 15 December at 11:59 PM EST. Required documents include certified academic transcripts, two letters of recommendation from faculty, an authenticated birth certificate, and a personal statement of purpose. Financial benefits include a 100% tuition fee waiver and an annual textbook stipend of $2,000 paid directly to the university account. The selection procedure consists of a preliminary document screening followed by an in-person panel interview in January."
+    },
+    {
+      "id": "src-demo-b",
+      "title": "Global Scholars Hub — Complete Guide & Deadlines (2026 Cycle Update)",
+      "domain": "globalscholarshub.org",
+      "url": "https://globalscholarshub.org/scholarships/global-excellence-2026",
+      "publicationDate": "2025-08-20",
+      "retrievedDate": "2026-10-12",
+      "sourceType": "third-party",
+      "cycleOrYear": "2026 Cycle",
+      "authorOrOrg": "Global Scholars Editorial Team",
+      "content": "Updated 2026 Guide: Global Excellence Scholarship overview. According to the advisory board update, the final application submission deadline is 20 December at 11:59 PM EST for the 2026 intake cycle. Gross annual family income must not exceed $60,000 as proven by the most recent certified tax return. Mandatory required documents are certified academic transcripts, two letters of recommendation, and state-verified income documentation. Award stacking policy and whether this grant can be combined with university merit stipends remains unannounced by the ministry."
+    },
+    {
+      "id": "src-demo-c",
+      "title": "Student Union Discussion Thread #4092: Renewal & Appeals",
+      "domain": "studenttalk.community",
+      "url": "https://studenttalk.community/t/global-excellence-renewal-rules/4092",
+      "publicationDate": "",
+      "retrievedDate": "2026-10-14",
+      "sourceType": "user-note",
+      "cycleOrYear": "Undated",
+      "authorOrOrg": "Anonymous Senior Scholar (Forum Post)",
+      "content": "User Note: Just a heads up for new awardees—someone in our cohort heard that renewal conditions require maintaining at least a 3.5 GPA every semester, but nobody has seen the official deed yet. Also, there is no mention anywhere of any appeal procedure if your application gets rejected, so do not count on re-evaluations."
+    }
+  ],
+  "questions": [
+    {
+      "id": "sch-eligibility",
+      "text": "What are the exact eligibility criteria (GPA, age, nationality)?",
+      "defaultPriority": "high",
+      "priority": "high",
+      "topic": "Eligibility Criteria",
+      "whyItMatters": "Applying while ineligible wastes effort, incurs non-refundable application fees, and risks disqualification.",
+      "keywords": ["eligible", "eligibility", "criteria", "qualify", "must be", "gpa", "minimum score", "nationality"],
+      "suggestedSource": "Official Scholarship Gazette or Institutional Policy Document",
+      "isSelected": true,
+      "status": "answered",
+      "findingSummary": "Minimum cumulative GPA of 3.8 and age under 22 required (Source A).",
+      "decisionReason": "Direct factual match found in official circular with exact excerpt.",
+      "suggestedNextStep": "Verify whether 2026 regulations maintain the 3.8 GPA threshold.",
+      "gapCategory": "none",
+      "evidence": [
+        {
+          "questionId": "sch-eligibility",
+          "sourceId": "src-demo-a",
+          "sourceTitle": "Ministry of Higher Education — Scholarship Circular (2025 Cycle)",
+          "sourceType": "official",
+          "sourceDate": "2024-09-15",
+          "excerpt": "Eligibility criteria require applicants to have achieved a minimum cumulative GPA of 3.8 on a 4.0 scale and be under 22 years of age at the time of enrollment.",
+          "startIndex": 88,
+          "endIndex": 242,
+          "findingType": "direct_fact"
+        }
+      ]
+    },
+    {
+      "id": "sch-deadline",
+      "text": "What is the final application submission deadline and time zone?",
+      "defaultPriority": "high",
+      "priority": "high",
+      "topic": "Application Deadlines",
+      "whyItMatters": "Late submissions are rejected automatically by application portals with no recourse.",
+      "keywords": ["deadline", "due date", "closing date", "december", "submit by", "application window", "last date"],
+      "suggestedSource": "Official Application Portal or Directorate Notification",
+      "isSelected": true,
+      "status": "conflicting",
+      "secondaryFlags": ["conflict"],
+      "findingSummary": "Conflict detected: 15 December (2025 circular) vs 20 December (2026 guide).",
+      "decisionReason": "Multiple sources state contradictory dates for the same deadline attribute.",
+      "suggestedNextStep": "Check the live official portal banner directly. Do not assume 20 Dec is valid without official gazette confirmation.",
+      "gapCategory": "none",
+      "evidence": [
+        {
+          "questionId": "sch-deadline",
+          "sourceId": "src-demo-a",
+          "sourceTitle": "Ministry of Higher Education — Scholarship Circular (2025 Cycle)",
+          "sourceType": "official",
+          "sourceDate": "2024-09-15",
+          "excerpt": "The final application submission deadline is 15 December at 11:59 PM EST.",
+          "startIndex": 243,
+          "endIndex": 315,
+          "findingType": "conflicting_claim"
+        },
+        {
+          "questionId": "sch-deadline",
+          "sourceId": "src-demo-b",
+          "sourceTitle": "Global Scholars Hub — Complete Guide & Deadlines (2026 Cycle Update)",
+          "sourceType": "third-party",
+          "sourceDate": "2025-08-20",
+          "excerpt": "According to the advisory board update, the final application submission deadline is 20 December at 11:59 PM EST for the 2026 intake cycle.",
+          "startIndex": 73,
+          "endIndex": 213,
+          "findingType": "conflicting_claim"
+        }
+      ]
+    },
+    {
+      "id": "sch-income-limit",
+      "text": "Are there family income caps or specific financial thresholds?",
+      "defaultPriority": "high",
+      "priority": "high",
+      "topic": "Income Restrictions",
+      "whyItMatters": "Exceeding the gross family income ceiling invalidates the application even if academic merit is stellar.",
+      "keywords": ["income", "annual income", "family income", "financial threshold", "tax return", "means-tested", "poverty line"],
+      "suggestedSource": "Financial Disclosure Guidelines / Revenue Authority Endorsement",
+      "isSelected": true,
+      "status": "requires-verification",
+      "secondaryFlags": ["unverified"],
+      "findingSummary": "Source B states a $60,000 cap, but official circular (Source A) does not mention income restrictions.",
+      "decisionReason": "Reported only by third-party blog (Source B) and unconfirmed by official government text.",
+      "suggestedNextStep": "Request formal clarification from financial aid desk regarding whether merit applicants are means-tested.",
+      "gapCategory": "ambiguous",
+      "evidence": [
+        {
+          "questionId": "sch-income-limit",
+          "sourceId": "src-demo-b",
+          "sourceTitle": "Global Scholars Hub — Complete Guide & Deadlines (2026 Cycle Update)",
+          "sourceType": "third-party",
+          "sourceDate": "2025-08-20",
+          "excerpt": "Gross annual family income must not exceed $60,000 as proven by the most recent certified tax return.",
+          "startIndex": 214,
+          "endIndex": 316,
+          "findingType": "unverified_hint"
+        }
+      ]
+    },
+    {
+      "id": "sch-documents",
+      "text": "What mandatory supporting documents and attestations are required?",
+      "defaultPriority": "medium",
+      "priority": "medium",
+      "topic": "Required Documents",
+      "whyItMatters": "Missing notary stamps, official transcripts, or apostilles causes immediate administrative rejection.",
+      "keywords": ["documents", "certificate", "transcripts", "attestation", "recommendation letter", "id proof", "annexure"],
+      "suggestedSource": "Checklist Annexure from official issuing authority",
+      "isSelected": true,
+      "status": "answered",
+      "findingSummary": "Transcripts, 2 faculty recommendation letters, authenticated birth certificate, and personal statement.",
+      "decisionReason": "Clear documented list found in official circular (Source A) and corroborated in Source B.",
+      "suggestedNextStep": "Obtain faculty recommendation letters at least 3 weeks in advance.",
+      "gapCategory": "none",
+      "evidence": [
+        {
+          "questionId": "sch-documents",
+          "sourceId": "src-demo-a",
+          "sourceTitle": "Ministry of Higher Education — Scholarship Circular (2025 Cycle)",
+          "sourceType": "official",
+          "sourceDate": "2024-09-15",
+          "excerpt": "Required documents include certified academic transcripts, two letters of recommendation from faculty, an authenticated birth certificate, and a personal statement of purpose.",
+          "startIndex": 316,
+          "endIndex": 489,
+          "findingType": "direct_fact"
+        }
+      ]
+    },
+    {
+      "id": "sch-benefits",
+      "text": "What does the financial grant cover (tuition, housing, books, stipend)?",
+      "defaultPriority": "medium",
+      "priority": "medium",
+      "topic": "Financial Benefits",
+      "whyItMatters": "Assuming a scholarship is 'full ride' often leaves hidden student fees, visa fees, and living cost deficits.",
+      "keywords": ["covers", "benefit", "stipend", "tuition", "allowance", "waiver", "amount", "financial grant"],
+      "suggestedSource": "Financial Aid Award Schedule",
+      "isSelected": true,
+      "status": "outdated",
+      "secondaryFlags": ["outdated"],
+      "findingSummary": "100% tuition waiver and $2,000 annual book stipend stated in 2025 circular; 2026 benefits unstated.",
+      "decisionReason": "Only supporting source refers to the earlier 2025 cycle (Source A is 1 year old).",
+      "suggestedNextStep": "Check if living stipend or dormitory allowances have been adjusted for inflation in 2026.",
+      "gapCategory": "none",
+      "evidence": [
+        {
+          "questionId": "sch-benefits",
+          "sourceId": "src-demo-a",
+          "sourceTitle": "Ministry of Higher Education — Scholarship Circular (2025 Cycle)",
+          "sourceType": "official",
+          "sourceDate": "2024-09-15",
+          "excerpt": "Financial benefits include a 100% tuition fee waiver and an annual textbook stipend of $2,000 paid directly to the university account.",
+          "startIndex": 490,
+          "endIndex": 625,
+          "findingType": "outdated_claim"
+        }
+      ]
+    },
+    {
+      "id": "sch-renewal",
+      "text": "What are the academic retention and annual renewal conditions?",
+      "defaultPriority": "high",
+      "priority": "high",
+      "topic": "Renewal Conditions",
+      "whyItMatters": "Many students lose funding in year 2 because they fell short of renewal GPA or credit requirements.",
+      "keywords": ["renewal", "renew", "maintain", "subsequent years", "gpa requirement", "re-apply", "annual review"],
+      "suggestedSource": "Continuing Student Regulations",
+      "isSelected": true,
+      "status": "requires-verification",
+      "secondaryFlags": ["unverified"],
+      "findingSummary": "Forum user mentions rumor of 3.5 GPA requirement, but notes no one has seen the official deed.",
+      "decisionReason": "Only supported by an undated, anonymous forum comment (Source C) without official backing.",
+      "suggestedNextStep": "Request continuing student regulations document from academic registry.",
+      "gapCategory": "ambiguous",
+      "evidence": [
+        {
+          "questionId": "sch-renewal",
+          "sourceId": "src-demo-c",
+          "sourceTitle": "Student Union Discussion Thread #4092: Renewal & Appeals",
+          "sourceType": "user-note",
+          "sourceDate": "Undated",
+          "excerpt": "User Note: Just a heads up for new awardees—someone in our cohort heard that renewal conditions require maintaining at least a 3.5 GPA every semester, but nobody has seen the official deed yet.",
+          "startIndex": 0,
+          "endIndex": 194,
+          "findingType": "unverified_hint"
+        }
+      ]
+    },
+    {
+      "id": "sch-stacking",
+      "text": "Can this award be combined (stacked) with other scholarships or loans?",
+      "defaultPriority": "medium",
+      "priority": "medium",
+      "topic": "Award Stacking & Exclusivity",
+      "whyItMatters": "Taking a secondary grant can accidentally void your primary award if exclusivity clauses exist.",
+      "keywords": ["concurrent", "other scholarship", "stacking", "combine", "exclusivity", "multiple awards", "holding other"],
+      "suggestedSource": "Terms of Award & Conflicts Code",
+      "isSelected": true,
+      "status": "not-found",
+      "findingSummary": "Confirmed unannounced: Source B explicitly notes stacking rules remain unreleased; Source A is silent.",
+      "decisionReason": "No reviewed source provides stacking terms; explicit information dark spot.",
+      "suggestedNextStep": "Ask scholarship administrator if receiving university department aid triggers award reduction.",
+      "gapCategory": "confirmed-missing",
+      "evidence": [
+        {
+          "questionId": "sch-stacking",
+          "sourceId": "src-demo-b",
+          "sourceTitle": "Global Scholars Hub — Complete Guide & Deadlines (2026 Cycle Update)",
+          "sourceType": "third-party",
+          "sourceDate": "2025-08-20",
+          "excerpt": "Award stacking policy and whether this grant can be combined with university merit stipends remains unannounced by the ministry.",
+          "startIndex": 447,
+          "endIndex": 575,
+          "findingType": "partial_evidence"
+        }
+      ]
+    },
+    {
+      "id": "sch-selection",
+      "text": "What is the selection and shortlisting procedure (written test, interview)?",
+      "defaultPriority": "low",
+      "priority": "low",
+      "topic": "Selection Procedure",
+      "whyItMatters": "Interviews often have short preparation windows and mandatory in-person presence.",
+      "keywords": ["selection", "shortlist", "interview", "written test", "screening committee", "merit list"],
+      "suggestedSource": "Selection Committee Protocol",
+      "isSelected": true,
+      "status": "answered",
+      "findingSummary": "Preliminary document screening followed by an in-person panel interview in January.",
+      "decisionReason": "Directly stated in official circular.",
+      "suggestedNextStep": "Prepare mock interview answers and verify if virtual interview option exists for overseas applicants.",
+      "gapCategory": "none",
+      "evidence": [
+        {
+          "questionId": "sch-selection",
+          "sourceId": "src-demo-a",
+          "sourceTitle": "Ministry of Higher Education — Scholarship Circular (2025 Cycle)",
+          "sourceType": "official",
+          "sourceDate": "2024-09-15",
+          "excerpt": "The selection procedure consists of a preliminary document screening followed by an in-person panel interview in January.",
+          "startIndex": 626,
+          "endIndex": 747,
+          "findingType": "direct_fact"
+        }
+      ]
+    },
+    {
+      "id": "sch-bond",
+      "text": "Is there a post-graduation work bond or service agreement obligation?",
+      "defaultPriority": "high",
+      "priority": "high",
+      "topic": "Service Bonds & Penalties",
+      "whyItMatters": "Breaching a hidden return-home or government service bond leads to severe financial clawbacks.",
+      "keywords": ["bond", "service period", "obligation", "repay", "penalty", "work commitment", "years of service"],
+      "suggestedSource": "Legal Deed and Undertaking Form",
+      "isSelected": true,
+      "status": "not-found",
+      "findingSummary": "CRITICAL GAP: Not found in any reviewed source. Neither notice mentions if a service bond is attached.",
+      "decisionReason": "Zero mention of post-study bond or obligations in all 3 sources reviewed.",
+      "suggestedNextStep": "Inspect the mandatory legal undertaking before signing any award contract.",
+      "gapCategory": "not-found"
+    },
+    {
+      "id": "sch-appeal",
+      "text": "Is there an appeal or grievance process in case of rejection?",
+      "defaultPriority": "low",
+      "priority": "low",
+      "topic": "Rejection & Appeal Procedure",
+      "whyItMatters": "Clerical errors in transcript evaluation can only be corrected within strict grievance windows.",
+      "keywords": ["appeal", "grievance", "reconsideration", "dispute", "rejection", "ombudsperson"],
+      "suggestedSource": "Appeals Tribunal or Grievance Cell Policy",
+      "isSelected": true,
+      "status": "not-found",
+      "findingSummary": "Source C warns there is no mention anywhere of appeal procedures; official sources are silent.",
+      "decisionReason": "No formal grievance policy discovered in provided sources.",
+      "suggestedNextStep": "Check student ombudsperson guidelines at destination institution.",
+      "gapCategory": "not-found"
+    }
+  ],
+  "truthClashes": [
+    {
+      "id": "clash-deadline",
+      "questionId": "sch-deadline",
+      "questionText": "What is the final application submission deadline and time zone?",
+      "topic": "Application Deadlines",
+      "attributeName": "Final Deadline Date",
+      "claimA": {
+        "sourceId": "src-demo-a",
+        "sourceTitle": "Ministry of Higher Education — Circular (2025 Cycle)",
+        "value": "15 December at 11:59 PM EST",
+        "excerpt": "The final application submission deadline is 15 December at 11:59 PM EST.",
+        "date": "2024-09-15",
+        "cycleOrYear": "2025 Cycle",
+        "sourceType": "official"
+      },
+      "claimB": {
+        "sourceId": "src-demo-b",
+        "sourceTitle": "Global Scholars Hub — Complete Guide (2026 Cycle)",
+        "value": "20 December at 11:59 PM EST",
+        "excerpt": "According to the advisory board update, the final application submission deadline is 20 December at 11:59 PM EST for the 2026 intake cycle.",
+        "date": "2025-08-20",
+        "cycleOrYear": "2026 Cycle",
+        "sourceType": "third-party"
+      },
+      "conflictReason": "Source A is the official government circular from the prior cycle stating Dec 15. Source B is a third-party guide referencing 2026 stating Dec 20. Neither should be assumed correct until official 2026 portal verification.",
+      "verificationAdvice": "Do NOT wait until 20 December. Aim for 15 December to stay safe, and verify on the live portal registration page directly."
+    }
+  ],
+  "checklist": [
+    {
+      "id": "chk-1",
+      "questionId": "sch-deadline",
+      "task": "Resolve 15 Dec vs 20 Dec deadline clash on official portal",
+      "priority": "high",
+      "completed": false,
+      "category": "Truth Clash",
+      "sourceToConsult": "Official Application Portal banner"
+    },
+    {
+      "id": "chk-2",
+      "questionId": "sch-bond",
+      "task": "Confirm whether a post-graduation service bond or repayment clawback exists",
+      "priority": "high",
+      "completed": false,
+      "category": "Invisible Question",
+      "sourceToConsult": "Scholarship Legal Undertaking / Deed Form"
+    },
+    {
+      "id": "chk-3",
+      "questionId": "sch-income-limit",
+      "task": "Verify if $60,000 income limit applies to merit candidates or only need-based tier",
+      "priority": "high",
+      "completed": false,
+      "category": "Requires Verification",
+      "sourceToConsult": "Official Financial Aid Criteria Gazette"
+    },
+    {
+      "id": "chk-4",
+      "questionId": "sch-renewal",
+      "task": "Obtain official 2026 renewal terms (verify the 3.5 GPA student forum claim)",
+      "priority": "high",
+      "completed": false,
+      "category": "Requires Verification",
+      "sourceToConsult": "Continuing Student Handbook"
+    },
+    {
+      "id": "chk-5",
+      "questionId": "sch-benefits",
+      "task": "Confirm if 2026 stipend matches 2025 amount ($2,000) or changed",
+      "priority": "medium",
+      "completed": true,
+      "category": "Time Traveller",
+      "sourceToConsult": "2026 Award Schedule Notification"
+    },
+    {
+      "id": "chk-6",
+      "questionId": "sch-stacking",
+      "task": "Check if stacking with department or university grants is prohibited",
+      "priority": "medium",
+      "completed": false,
+      "category": "Invisible Question",
+      "sourceToConsult": "Conflicts of Financial Aid Code"
+    },
+    {
+      "id": "chk-7",
+      "questionId": "sch-appeal",
+      "task": "Inquire if administrative re-evaluation exists for transcript errors",
+      "priority": "low",
+      "completed": false,
+      "category": "Invisible Question",
+      "sourceToConsult": "Ombudsperson Office"
+    }
+  ],
+  "scoring": {
+    "totalQuestions": 10,
+    "highPriorityCount": 5,
+    "answeredCount": 3,
+    "partialCount": 0,
+    "notFoundCount": 3,
+    "conflictCount": 1,
+    "outdatedCount": 1,
+    "requiresVerificationCount": 2,
+    "scorePercentage": 38,
+    "totalEarnedWeight": 10,
+    "maxPossibleWeight": 26,
+    "formulaDescription": "Weighted coverage: High Priority (3 pts each), Medium Priority (2 pts each), Low Priority (1 pt each). Answered = 100%, Partially Answered = 50%, Outdated/Conflict/Unverified/Not Found = 0% verified coverage.",
+    "legend": {
+      "sourcedFacts": 3,
+      "automatedComparisons": 1,
+      "aiSuggestions": 0,
+      "unresolvedUncertainties": 6
+    }
+  },
+  "characterReactions": {
+    "shinchan": "Action Detective Chief Shinchan: 'Aha! We found 3 solid facts, but 6 big mysteries are still hiding in the dark! Don't let sneaky deadlines trick you!'",
+    "kazama": "Logic Investigator Kazama: 'Major conflict detected! Source A says Dec 15 while Source B claims Dec 20. Never assume the blog is correct!'",
+    "nene": "Mystery Investigator Nene: 'I found 3 completely invisible questions! Nobody told you about post-graduation bonds or whether you can stack grants!'",
+    "masao": "Time Investigator Masao: 'Yikes! Source A is from 2024 (2025 cycle). Don't trust 1-year-old stipend figures for the 2026 cycle!'",
+    "bochan": "Evidence Investigator Bo-chan: 'All 3 answered questions have exact quote excerpts directly linked to their source documents. No guessing here!'",
+    "himawari": "Clue Finder Himawari: 'Babu! Found 7 action tasks to check off before submitting!'"
+  }
+}

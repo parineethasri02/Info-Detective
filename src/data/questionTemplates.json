@@ -1,0 +1,719 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "scholarships",
+      "name": "Scholarships",
+      "icon": "GraduationCap",
+      "character": "nene",
+      "description": "Check eligibility, hidden bonds, deadlines, and renewal traps before applying.",
+      "keywords": ["scholarship", "fellowship", "stipend", "grant", "financial aid", "bursary"],
+      "suggestedPrompt": {
+        "topic": "Global Merit & Need-Based Undergraduate Scholarship 2026",
+        "mainQuestion": "What are the exact eligibility criteria, deadlines, and renewal terms?",
+        "objective": "Verify if I qualify, confirm submission deadline, and ensure I can renew it for all four years without conflicting with other financial aid."
+      },
+      "questions": [
+        {
+          "id": "sch-eligibility",
+          "text": "What are the exact eligibility criteria (GPA, age, nationality)?",
+          "defaultPriority": "high",
+          "topic": "Eligibility Criteria",
+          "whyItMatters": "Applying while ineligible wastes effort, incurs non-refundable application fees, and risks disqualification.",
+          "keywords": ["eligible", "eligibility", "criteria", "qualify", "must be", "gpa", "minimum score", "nationality"],
+          "suggestedSource": "Official Scholarship Gazette or Institutional Policy Document"
+        },
+        {
+          "id": "sch-deadline",
+          "text": "What is the final application submission deadline and time zone?",
+          "defaultPriority": "high",
+          "topic": "Application Deadlines",
+          "whyItMatters": "Late submissions are rejected automatically by application portals with no recourse.",
+          "keywords": ["deadline", "due date", "closing date", "december", "submit by", "application window", "last date"],
+          "suggestedSource": "Official Application Portal or Directorate Notification"
+        },
+        {
+          "id": "sch-income-limit",
+          "text": "Are there family income caps or specific financial thresholds?",
+          "defaultPriority": "high",
+          "topic": "Income Restrictions",
+          "whyItMatters": "Exceeding the gross family income ceiling invalidates the application even if academic merit is stellar.",
+          "keywords": ["income", "annual income", "family income", "financial threshold", "tax return", "means-tested", "poverty line"],
+          "suggestedSource": "Financial Disclosure Guidelines / Revenue Authority Endorsement"
+        },
+        {
+          "id": "sch-documents",
+          "text": "What mandatory supporting documents and attestations are required?",
+          "defaultPriority": "medium",
+          "topic": "Required Documents",
+          "whyItMatters": "Missing notary stamps, official transcripts, or apostilles causes immediate administrative rejection.",
+          "keywords": ["documents", "certificate", "transcripts", "attestation", "recommendation letter", "id proof", "annexure"],
+          "suggestedSource": "Checklist Annexure from official issuing authority"
+        },
+        {
+          "id": "sch-benefits",
+          "text": "What does the financial grant cover (tuition, housing, books, stipend)?",
+          "defaultPriority": "medium",
+          "topic": "Financial Benefits",
+          "whyItMatters": "Assuming a scholarship is 'full ride' often leaves hidden student fees, visa fees, and living cost deficits.",
+          "keywords": ["covers", "benefit", "stipend", "tuition", "allowance", "waiver", "amount", "financial grant"],
+          "suggestedSource": "Financial Aid Award Schedule"
+        },
+        {
+          "id": "sch-renewal",
+          "text": "What are the academic retention and annual renewal conditions?",
+          "defaultPriority": "high",
+          "topic": "Renewal Conditions",
+          "whyItMatters": "Many students lose funding in year 2 because they fell short of renewal GPA or credit requirements.",
+          "keywords": ["renewal", "renew", "maintain", "subsequent years", "gpa requirement", "re-apply", "annual review"],
+          "suggestedSource": "Continuing Student Regulations"
+        },
+        {
+          "id": "sch-stacking",
+          "text": "Can this award be combined (stacked) with other scholarships or loans?",
+          "defaultPriority": "medium",
+          "topic": "Award Stacking & Exclusivity",
+          "whyItMatters": "Taking a secondary grant can accidentally void your primary award if exclusivity clauses exist.",
+          "keywords": ["concurrent", "other scholarship", "stacking", "combine", "exclusivity", "multiple awards", "holding other"],
+          "suggestedSource": "Terms of Award & Conflicts Code"
+        },
+        {
+          "id": "sch-selection",
+          "text": "What is the selection and shortlisting procedure (written test, interview)?",
+          "defaultPriority": "low",
+          "topic": "Selection Procedure",
+          "whyItMatters": "Interviews often have short preparation windows and mandatory in-person presence.",
+          "keywords": ["selection", "shortlist", "interview", "written test", "screening committee", "merit list"],
+          "suggestedSource": "Selection Committee Protocol"
+        },
+        {
+          "id": "sch-bond",
+          "text": "Is there a post-graduation work bond or service agreement obligation?",
+          "defaultPriority": "high",
+          "topic": "Service Bonds & Penalties",
+          "whyItMatters": "Breaching a hidden return-home or government service bond leads to severe financial clawbacks.",
+          "keywords": ["bond", "service period", "obligation", "repay", "penalty", "work commitment", "years of service"],
+          "suggestedSource": "Legal Deed and Undertaking Form"
+        },
+        {
+          "id": "sch-appeal",
+          "text": "Is there an appeal or grievance process in case of rejection?",
+          "defaultPriority": "low",
+          "topic": "Rejection & Appeal Procedure",
+          "whyItMatters": "Clerical errors in transcript evaluation can only be corrected within strict grievance windows.",
+          "keywords": ["appeal", "grievance", "reconsideration", "dispute", "rejection", "ombudsperson"],
+          "suggestedSource": "Appeals Tribunal or Grievance Cell Policy"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "icon": "BookOpen",
+      "character": "kazama",
+      "description": "Investigate universities, online degree accreditation, hidden fees, and transfer credits.",
+      "keywords": ["university", "college", "degree", "accreditation", "tuition", "admissions", "syllabus"],
+      "suggestedPrompt": {
+        "topic": "Master of Science in Artificial Intelligence Admission & Accreditation",
+        "mainQuestion": "Is this program formally accredited, what are hidden costs, and do credits transfer?",
+        "objective": "Verify institutional accreditation, verify total tuition plus hidden facility fees, and check faculty mentorship."
+      },
+      "questions": [
+        {
+          "id": "edu-accreditation",
+          "text": "Is the institution and specific degree program regionally/professionally accredited?",
+          "defaultPriority": "high",
+          "topic": "Accreditation Status",
+          "whyItMatters": "Unaccredited degrees are rejected by employers, licensing boards, and graduate schools.",
+          "keywords": ["accredited", "accreditation", "recognized", "board", "regulatory body", "council"],
+          "suggestedSource": "National/Regional Ministry of Education Database"
+        },
+        {
+          "id": "edu-tuition-hidden",
+          "text": "What is the true total cost of attendance including lab, tech, and campus fees?",
+          "defaultPriority": "high",
+          "topic": "Total Cost of Attendance",
+          "whyItMatters": "Tuition quoted on promotional brochures often excludes 20-30% mandatory auxiliary fees.",
+          "keywords": ["tuition", "fees", "cost of attendance", "lab fee", "technology fee", "semester fee", "breakdown"],
+          "suggestedSource": "Bursar's Office Fee Schedule"
+        },
+        {
+          "id": "edu-admissions-req",
+          "text": "What are the prerequisite courses, test scores (GRE/GMAT), and cutoff bars?",
+          "defaultPriority": "high",
+          "topic": "Prerequisites & Cutoffs",
+          "whyItMatters": "Missing a foundational mathematics or coding course can delay graduation by a full semester.",
+          "keywords": ["prerequisite", "admission requirements", "gre", "gmat", "cut-off", "minimum score"],
+          "suggestedSource": "Graduate Admissions Department Bulletin"
+        },
+        {
+          "id": "edu-credit-transfer",
+          "text": "What is the exact credit transfer policy and maximum transferable credits?",
+          "defaultPriority": "medium",
+          "topic": "Credit Transfer",
+          "whyItMatters": "Previous coursework may not transfer, forcing you to pay for and repeat courses.",
+          "keywords": ["transfer credit", "prior learning", "articulation agreement", "course equivalency"],
+          "suggestedSource": "Registrar's Transfer Policy"
+        },
+        {
+          "id": "edu-placement-stats",
+          "text": "What are the independently audited career placement rates and median starting salaries?",
+          "defaultPriority": "medium",
+          "topic": "Job Placement Data",
+          "whyItMatters": "Self-reported marketing numbers often count non-degree retail jobs as 'employed'.",
+          "keywords": ["placement rate", "employment rate", "median salary", "career outcomes", "hiring partners"],
+          "suggestedSource": "Standardized Graduate Outcomes Survey"
+        },
+        {
+          "id": "edu-format-schedule",
+          "text": "Is the schedule fully synchronous, asynchronous, or requires mandatory weekend campus visits?",
+          "defaultPriority": "medium",
+          "topic": "Delivery Format",
+          "whyItMatters": "Working professionals may discover unmanageable weekday lecture requirements.",
+          "keywords": ["synchronous", "asynchronous", "in-person", "residency", "hybrid", "lecture schedule"],
+          "suggestedSource": "Academic Timetable and Syllabus Overview"
+        },
+        {
+          "id": "edu-refund-policy",
+          "text": "What is the course drop deadline and tuition refund schedule?",
+          "defaultPriority": "low",
+          "topic": "Drop / Refund Policy",
+          "whyItMatters": "Withdrawing after the first week can forfeit 100% of paid tuition.",
+          "keywords": ["drop deadline", "refund", "withdrawal", "forfeiture", "cancellation policy"],
+          "suggestedSource": "Student Financial Services Withdrawal Policy"
+        },
+        {
+          "id": "edu-faculty-ratio",
+          "text": "Who teaches core courses: tenured professors or adjunct instructors?",
+          "defaultPriority": "low",
+          "topic": "Faculty Quality",
+          "whyItMatters": "Teaching assistant ratios affect letter-of-recommendation access and research opportunities.",
+          "keywords": ["faculty", "professor", "adjunct", "instructor", "student-to-faculty", "advising"],
+          "suggestedSource": "Department Faculty Directory"
+        }
+      ]
+    },
+    {
+      "id": "career",
+      "name": "Career and Employment",
+      "icon": "Briefcase",
+      "character": "kazama",
+      "description": "Inspect job offers, non-competes, probation criteria, equity vesting, and severance.",
+      "keywords": ["job", "offer", "salary", "compensation", "equity", "non-compete", "probation", "severance"],
+      "suggestedPrompt": {
+        "topic": "Senior Software Engineer Job Offer & Employment Contract",
+        "mainQuestion": "What are the true compensation numbers, equity vesting cliffs, and restrictive covenants?",
+        "objective": "Verify base salary vs bonus conditions, stock option 1-year cliff, and whether non-compete restricts future roles."
+      },
+      "questions": [
+        {
+          "id": "car-base-vs-variable",
+          "text": "What part of compensation is guaranteed base salary vs conditional performance bonus?",
+          "defaultPriority": "high",
+          "topic": "Compensation Structure",
+          "whyItMatters": "Inflated CTC figures frequently conceal unrealistic KPI-driven discretionary bonuses.",
+          "keywords": ["base salary", "variable pay", "bonus", "ctc", "performance bonus", "guaranteed"],
+          "suggestedSource": "Offer Letter Compensation Annexure"
+        },
+        {
+          "id": "car-equity-vesting",
+          "text": "What is the equity schedule: vesting cliff, exercise window, and post-termination exercise period (PTEP)?",
+          "defaultPriority": "high",
+          "topic": "Stock Options & Equity",
+          "whyItMatters": "A 90-day PTEP can render vested options completely worthless if cash is unavailable during departure.",
+          "keywords": ["equity", "vesting", "cliff", "stock options", "rsu", "ptep", "exercise window"],
+          "suggestedSource": "Company Equity Incentive Plan"
+        },
+        {
+          "id": "car-non-compete",
+          "text": "Does the contract include a post-employment non-compete or non-solicitation clause?",
+          "defaultPriority": "high",
+          "topic": "Restrictive Covenants",
+          "whyItMatters": "Broad non-competes can legally bar you from working in your specialized industry for 12 months.",
+          "keywords": ["non-compete", "non-solicitation", "restraint", "restrictive covenant", "competitor"],
+          "suggestedSource": "Confidentiality & Non-Disclosure Agreement"
+        },
+        {
+          "id": "car-probation",
+          "text": "What is the probation duration, evaluation criteria, and notice period during probation?",
+          "defaultPriority": "medium",
+          "topic": "Probation Period",
+          "whyItMatters": "Uncapped probation allows employers to terminate employment with minimal notice and no severance.",
+          "keywords": ["probation", "confirmation", "trial period", "notice period during probation"],
+          "suggestedSource": "Human Resources Employee Handbook"
+        },
+        {
+          "id": "car-remote-policy",
+          "text": "Is the remote / hybrid arrangement contractually protected or subject to immediate recall?",
+          "defaultPriority": "medium",
+          "topic": "Work Location Flexibility",
+          "whyItMatters": "Verbal remote promises can be reversed with a mandatory Return-to-Office mandate at any moment.",
+          "keywords": ["remote", "work from home", "hybrid", "office days", "relocation", "location"],
+          "suggestedSource": "Official Employment Contract"
+        },
+        {
+          "id": "car-health-benefits",
+          "text": "What is the scope of health insurance (family coverage, copays, pre-existing conditions)?",
+          "defaultPriority": "medium",
+          "topic": "Health & Medical Coverage",
+          "whyItMatters": "High deductible insurance plans can result in unexpected out-of-pocket medical expenses.",
+          "keywords": ["health insurance", "medical cover", "dental", "vision", "dependents", "premium"],
+          "suggestedSource": "Benefits Summary Plan Description"
+        },
+        {
+          "id": "car-ip-assignment",
+          "text": "Does the intellectual property assignment clause claim ownership over your personal off-hours projects?",
+          "defaultPriority": "high",
+          "topic": "Intellectual Property Ownership",
+          "whyItMatters": "Overly broad IP clauses can forfeit your personal side businesses, apps, and open-source projects.",
+          "keywords": ["intellectual property", "inventions", "moonlighting", "side project", "assignment"],
+          "suggestedSource": "Proprietary Information and Inventions Agreement"
+        },
+        {
+          "id": "car-severance",
+          "text": "What is the severance policy and notice period required for termination without cause?",
+          "defaultPriority": "low",
+          "topic": "Termination & Severance",
+          "whyItMatters": "Standard at-will contracts offer zero severance unless explicitly negotiated in writing.",
+          "keywords": ["severance", "termination", "without cause", "layoff", "pay in lieu", "notice period"],
+          "suggestedSource": "Separation Policy in Offer Letter"
+        }
+      ]
+    },
+    {
+      "id": "study-abroad",
+      "name": "Study Abroad",
+      "icon": "Plane",
+      "character": "masao",
+      "description": "Uncover student visa restrictions, post-study work rights, living costs, and health insurance.",
+      "keywords": ["study abroad", "visa", "student visa", "post-study work", "psw", "living costs", "ielts", "blocked account"],
+      "suggestedPrompt": {
+        "topic": "Postgraduate Studies in Germany: Visa, Blocked Account & Work Rights",
+        "mainQuestion": "What are the updated blocked account amounts, part-time work limits, and post-study visas?",
+        "objective": "Verify official 2026 blocked account financial requirement, language certification, and stay-back rights."
+      },
+      "questions": [
+        {
+          "id": "sa-visa-funds",
+          "text": "What is the required proof of financial funds (blocked account, bank guarantee amount)?",
+          "defaultPriority": "high",
+          "topic": "Financial Proof & Blocked Account",
+          "whyItMatters": "Financial requirements increase yearly; underfunding by even €100 halts visa issuance.",
+          "keywords": ["blocked account", "financial proof", "bank balance", "maintenance funds", "embassy requirement"],
+          "suggestedSource": "Federal Ministry of Foreign Affairs / Immigration Bureau"
+        },
+        {
+          "id": "sa-work-rights",
+          "text": "How many hours per week is an international student legally permitted to work?",
+          "defaultPriority": "high",
+          "topic": "Student Work Authorisation",
+          "whyItMatters": "Working beyond the statutory limit constitutes an immigration violation leading to deportation.",
+          "keywords": ["work hours", "part-time", "working hours", "campus job", "full days", "statutory limit"],
+          "suggestedSource": "Official Student Visa Regulations"
+        },
+        {
+          "id": "sa-post-study-visa",
+          "text": "What is the duration and qualifying criteria for the post-study work visa (stay-back)?",
+          "defaultPriority": "high",
+          "topic": "Post-Study Work Rights",
+          "whyItMatters": "Changes in government immigration caps can shorten graduate stay-back periods drastically.",
+          "keywords": ["post-study work", "stay-back", "graduate route", "work permit", "job seeker visa"],
+          "suggestedSource": "Department of Home Affairs / Interior Ministry"
+        },
+        {
+          "id": "sa-language-cert",
+          "text": "What language proficiency tests (IELTS, TOEFL, Goethe) and minimum band scores are mandatory?",
+          "defaultPriority": "medium",
+          "topic": "Language Requirements",
+          "whyItMatters": "Different university departments often demand higher band minimums than the general visa threshold.",
+          "keywords": ["ielts", "toefl", "band score", "language proficiency", "cefr", "duolingo"],
+          "suggestedSource": "Faculty Admission Guidelines"
+        },
+        {
+          "id": "sa-insurance-mandate",
+          "text": "Is statutory public health insurance mandatory, or is private travel insurance accepted?",
+          "defaultPriority": "medium",
+          "topic": "Mandatory Health Insurance",
+          "whyItMatters": "Inadequate private insurance can prevent university matriculation on arrival.",
+          "keywords": ["health insurance", "statutory insurance", "public health", "ehic", "insurance waiver"],
+          "suggestedSource": "Student Union Social Counselling Guide"
+        },
+        {
+          "id": "sa-housing-guarantee",
+          "text": "Does the institution guarantee student dormitory housing or require private rentals?",
+          "defaultPriority": "medium",
+          "topic": "Accommodation & Housing Crisis",
+          "whyItMatters": "Severe housing shortages in student cities force costly emergency hostel stays.",
+          "keywords": ["accommodation", "dormitory", "housing", "student residence", "rental market"],
+          "suggestedSource": "University Student Services Housing Bureau"
+        },
+        {
+          "id": "sa-dependents-policy",
+          "text": "Can a student bring a spouse or dependent children, and do they have work rights?",
+          "defaultPriority": "low",
+          "topic": "Dependent Visa Regulations",
+          "whyItMatters": "Many countries recently banned dependents on standard taught master's courses.",
+          "keywords": ["spouse", "dependent", "children", "family visa", "accompanying"],
+          "suggestedSource": "Immigration Statutory Guidance"
+        },
+        {
+          "id": "sa-apostille-timing",
+          "text": "How long does document legalization and visa appointment waiting take?",
+          "defaultPriority": "low",
+          "topic": "Processing Timeline & Delays",
+          "whyItMatters": "Visa waitlists in peak summer seasons regularly exceed 10 to 14 weeks.",
+          "keywords": ["appointment wait time", "processing time", "legalization", "apostille", "turnaround"],
+          "suggestedSource": "Consular Visa Appointment System Status"
+        }
+      ]
+    },
+    {
+      "id": "gov-schemes",
+      "name": "Government Schemes",
+      "icon": "Landmark",
+      "character": "bochan",
+      "description": "Audit government subsidy programs, social welfare eligibility, documentation, and disbursement.",
+      "keywords": ["government scheme", "subsidy", "welfare", "grant", "citizen benefit", "eligibility", "portal"],
+      "suggestedPrompt": {
+        "topic": "Clean Energy Residential Solar Rooftop Subsidy Scheme",
+        "mainQuestion": "What are the exact subsidy slabs, vendor approvals, and bank disbursement rules?",
+        "objective": "Verify eligibility threshold, approved installer registry, and post-installation inspection timeline."
+      },
+      "questions": [
+        {
+          "id": "gov-citizen-eligibility",
+          "text": "Who is eligible: income category, land ownership, residence status, and exclusions?",
+          "defaultPriority": "high",
+          "topic": "Eligibility & Exclusions",
+          "whyItMatters": "Government schemes strictly exclude taxpayers or commercial meters without prior warning.",
+          "keywords": ["eligibility", "beneficiary", "criteria", "who can apply", "exclusion", "domicile"],
+          "suggestedSource": "Official Government Gazette Notification"
+        },
+        {
+          "id": "gov-disbursement-mode",
+          "text": "How is the subsidy disbursed (Direct Benefit Transfer to bank vs upfront discount)?",
+          "defaultPriority": "high",
+          "topic": "Disbursement Mechanism",
+          "whyItMatters": "DBT transfers often take 6-12 months to clear, requiring full upfront liquidity.",
+          "keywords": ["disbursement", "dbt", "bank transfer", "upfront discount", "reimbursement", "escrow"],
+          "suggestedSource": "Department Financial Implementation Guidelines"
+        },
+        {
+          "id": "gov-approved-vendors",
+          "text": "Must equipment be purchased solely through empaneled vendors or any certified vendor?",
+          "defaultPriority": "high",
+          "topic": "Empaneled Vendor Mandate",
+          "whyItMatters": "Purchasing from an unlisted vendor entirely cancels subsidy reimbursement eligibility.",
+          "keywords": ["empaneled", "approved vendor", "authorized installer", "certified provider", "tendering"],
+          "suggestedSource": "Nodal Agency Empanelment Roster"
+        },
+        {
+          "id": "gov-kyc-docs",
+          "text": "What official identification and property ownership certificates are mandatory?",
+          "defaultPriority": "medium",
+          "topic": "KYC & Verification Documents",
+          "whyItMatters": "Mismatched names on electricity bills vs ID cards causes indefinite application freeze.",
+          "keywords": ["kyc", "identity proof", "land deed", "utility bill", "ration card", "aadhaar", "ssn"],
+          "suggestedSource": "Scheme Application Instructions"
+        },
+        {
+          "id": "gov-inspection-timeline",
+          "text": "What is the technical inspection, commissioning, and net-metering approval timeline?",
+          "defaultPriority": "medium",
+          "topic": "Inspection & Commissioning",
+          "whyItMatters": "Delays by utility inspectors can leave installations idle for months.",
+          "keywords": ["inspection", "commissioning", "approval timeline", "field visit", "metering"],
+          "suggestedSource": "Utility Operating Procedure Manual"
+        },
+        {
+          "id": "gov-scheme-validity",
+          "text": "What is the sunset date or allocated budgetary ceiling for this scheme cycle?",
+          "defaultPriority": "medium",
+          "topic": "Scheme Sunset & Budget Cap",
+          "whyItMatters": "Applications submitted after budget exhaustion are queued indefinitely without funding.",
+          "keywords": ["validity", "sunset date", "budget allocation", "first come first served", "scheme duration"],
+          "suggestedSource": "Budgetary Sanction Order"
+        },
+        {
+          "id": "gov-maintenance-obligation",
+          "text": "Does the scheme mandate a multi-year warranty or maintenance service contract?",
+          "defaultPriority": "low",
+          "topic": "Post-Installation Warranty",
+          "whyItMatters": "Beneficiaries must know whether repairs are covered free of cost for 5 years.",
+          "keywords": ["warranty", "maintenance", "comprehensive amc", "service contract", "breakdown"],
+          "suggestedSource": "Service Level Agreement Annexure"
+        },
+        {
+          "id": "gov-grievance-redressal",
+          "text": "Where can delayed payments or corrupt official delays be escalated?",
+          "defaultPriority": "low",
+          "topic": "Grievance Redressal",
+          "whyItMatters": "Citizen charters stipulate time-bound resolution windows for administrative delay.",
+          "keywords": ["grievance", "complaint", "nodal officer", "helpline", "escalation", "ombudsman"],
+          "suggestedSource": "Citizen Charter & Public Grievance Portal"
+        }
+      ]
+    },
+    {
+      "id": "shopping-products",
+      "name": "Shopping and Products",
+      "icon": "ShoppingCart",
+      "character": "himawari",
+      "description": "Inspect product specifications, warranties, return restock fees, and hidden subscription costs.",
+      "keywords": ["product", "review", "specs", "warranty", "return policy", "subscription", "durability"],
+      "suggestedPrompt": {
+        "topic": "Smart Home Robotic Vacuum Cleaner Model X Purchase Review",
+        "mainQuestion": "What are the true subscription costs, replacement part prices, and warranty exclusions?",
+        "objective": "Verify if AI features require a paid subscription, check battery warranty duration, and return fees."
+      },
+      "questions": [
+        {
+          "id": "shop-hidden-subs",
+          "text": "Are advertised smart features locked behind a mandatory paid monthly subscription?",
+          "defaultPriority": "high",
+          "topic": "Mandatory Subscriptions",
+          "whyItMatters": "Hardware may be rendered severely crippled without a recurring monthly paywall.",
+          "keywords": ["subscription", "monthly fee", "paywall", "premium features", "cloud storage fee", "membership"],
+          "suggestedSource": "Manufacturer Terms of Service / App Store Pricing"
+        },
+        {
+          "id": "shop-warranty-exclusions",
+          "text": "What components are excluded from the standard warranty (wear & tear, battery)?",
+          "defaultPriority": "high",
+          "topic": "Warranty Exclusions",
+          "whyItMatters": "Batteries and motors are often limited to 90 days while the chassis is advertised for 2 years.",
+          "keywords": ["warranty", "exclusions", "wear and tear", "battery warranty", "limited warranty", "void"],
+          "suggestedSource": "Official Manufacturer Warranty Policy"
+        },
+        {
+          "id": "shop-returns-restock",
+          "text": "What is the return window, return shipping liability, and restocking fee percentage?",
+          "defaultPriority": "high",
+          "topic": "Return & Restocking Fees",
+          "whyItMatters": "Returns on heavy or opened electronics may incur a 15-20% deduction plus return freight.",
+          "keywords": ["return policy", "restocking fee", "return window", "open box", "return shipping", "refund"],
+          "suggestedSource": "Merchant Return & Refund Policy"
+        },
+        {
+          "id": "shop-repairability",
+          "text": "Can consumable parts (filters, brushes, batteries) be replaced by the owner easily?",
+          "defaultPriority": "medium",
+          "topic": "User Repairability & Spare Parts",
+          "whyItMatters": "Glued-in batteries force expensive whole-unit replacements after 24 months.",
+          "keywords": ["repairable", "replacement parts", "consumables", "battery replacement", "spare parts cost"],
+          "suggestedSource": "Independent Teardown / Service Manual"
+        },
+        {
+          "id": "shop-compatibility",
+          "text": "Does it integrate with open smart home standards (Matter, Apple Home, Home Assistant)?",
+          "defaultPriority": "medium",
+          "topic": "Interoperability & Protocol",
+          "whyItMatters": "Proprietary protocols prevent integration with existing smart home setups.",
+          "keywords": ["matter", "zigbee", "apple homekit", "home assistant", "alexa", "compatibility"],
+          "suggestedSource": "Product Technical Specification Sheet"
+        },
+        {
+          "id": "shop-data-privacy",
+          "text": "Does the device record camera / audio feeds and upload them to cloud servers?",
+          "defaultPriority": "medium",
+          "topic": "Data Privacy & Cloud Upload",
+          "whyItMatters": "Visual cameras in private homes can upload unencrypted floorplans to third-party servers.",
+          "keywords": ["privacy", "camera feed", "cloud upload", "data storage", "microphone", "encryption"],
+          "suggestedSource": "Product Privacy Whitepaper"
+        },
+        {
+          "id": "shop-durability-issues",
+          "text": "What are recurring failure patterns reported after 6 to 12 months of daily use?",
+          "defaultPriority": "low",
+          "topic": "Long-Term Durability Reports",
+          "whyItMatters": "Short honeymoon review periods miss recurring gear strip or motherboard degradation issues.",
+          "keywords": ["long-term review", "failure", "broken after", "reliability", "durability", "known issue"],
+          "suggestedSource": "Long-Term Reliability Audits & Owner Forums"
+        },
+        {
+          "id": "shop-box-contents",
+          "text": "What required accessories (cables, adapters, cleaning solutions) are excluded from the retail box?",
+          "defaultPriority": "low",
+          "topic": "Included vs Excluded Accessories",
+          "whyItMatters": "Missing power bricks or charging cables require immediate auxiliary spending.",
+          "keywords": ["in the box", "package contents", "adapter not included", "included accessories", "starter pack"],
+          "suggestedSource": "Retail Box Contents Listing"
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel",
+      "icon": "Compass",
+      "character": "shinchan",
+      "description": "Inspect tourist visa validity, local transit passes, tourist taxes, and cancellation policies.",
+      "keywords": ["travel", "tourism", "visa", "itinerary", "transit pass", "cancellation", "tourist tax"],
+      "suggestedPrompt": {
+        "topic": "Japan Autumn Travel & Transit Passes (JR Pass & Regional Cards)",
+        "mainQuestion": "What are updated regional pass rules, seat reservation mandates, and baggage limits?",
+        "objective": "Verify JR pass cost efficiency after price hike, oversized baggage reservation, and hotel city taxes."
+      },
+      "questions": [
+        {
+          "id": "trv-visa-passport",
+          "text": "What is the minimum passport validity required upon entry (e.g. 6 months) and visa waiver terms?",
+          "defaultPriority": "high",
+          "topic": "Entry & Passport Validity",
+          "whyItMatters": "Airlines deny boarding at departure if passport validity falls short by even a few days.",
+          "keywords": ["passport validity", "6 months", "visa requirement", "visa exemption", "entry rules", "customs"],
+          "suggestedSource": "Official National Consular Portal"
+        },
+        {
+          "id": "trv-transit-changes",
+          "text": "Have transit passes or ticket prices changed recently, and are online seat reservations mandatory?",
+          "defaultPriority": "high",
+          "topic": "Transit Passes & Price Hikes",
+          "whyItMatters": "Using outdated 2023 transit blog articles causes budgeting errors due to major price overhauls.",
+          "keywords": ["transit pass", "train pass", "fare hike", "seat reservation", "bullet train", "price change"],
+          "suggestedSource": "National Railway Authority Official Portal"
+        },
+        {
+          "id": "trv-baggage-rules",
+          "text": "Are there mandatory pre-booking rules or surcharges for oversized luggage on express trains?",
+          "defaultPriority": "medium",
+          "topic": "Oversized Luggage Mandate",
+          "whyItMatters": "Bringing large luggage without reservation incurs immediate penalty fees and refusal of transit.",
+          "keywords": ["luggage", "baggage", "oversized baggage", "reservation", "dimensions", "penalty"],
+          "suggestedSource": "Railway Luggage Policy Guide"
+        },
+        {
+          "id": "trv-tourist-taxes",
+          "text": "Are there local municipal tourist accommodation taxes payable directly in cash at check-in?",
+          "defaultPriority": "medium",
+          "topic": "Local City & Accommodation Taxes",
+          "whyItMatters": "Prepaid online hotel bookings frequently omit city taxes levied on-site per person per night.",
+          "keywords": ["tourist tax", "city tax", "accommodation tax", "hotel tax", "payable at hotel"],
+          "suggestedSource": "Municipal Tourism Bureau Tax Regulations"
+        },
+        {
+          "id": "trv-seasonality-crowds",
+          "text": "Are major attractions subject to mandatory timed-entry lottery reservations or seasonal closures?",
+          "defaultPriority": "medium",
+          "topic": "Timed Entry & Booking Windows",
+          "whyItMatters": "Showing up without pre-booked timed tickets can turn away visitors at top cultural landmarks.",
+          "keywords": ["timed entry", "lottery", "advance booking", "seasonal closure", "crowd control", "admission"],
+          "suggestedSource": "Official Heritage Site / Museum Booking Service"
+        },
+        {
+          "id": "trv-cancellation-rules",
+          "text": "What are the non-refundable cancellation cutoff dates for accommodation and local transit tours?",
+          "defaultPriority": "low",
+          "topic": "Cancellation Policy",
+          "whyItMatters": "Sudden weather disruptions (typhoons, blizzards) can forfeit 100% of non-refundable bookings.",
+          "keywords": ["cancellation policy", "free cancellation", "non-refundable", "cancellation fee", "cutoff"],
+          "suggestedSource": "Booking Confirmation Terms"
+        },
+        {
+          "id": "trv-payment-acceptance",
+          "text": "Is international contactless credit card accepted everywhere, or is local cash strictly needed?",
+          "defaultPriority": "low",
+          "topic": "Payment Acceptance & ATMs",
+          "whyItMatters": "Regional buses, temple admissions, and ramen shops frequently accept only physical domestic cash.",
+          "keywords": ["cash only", "credit card", "ic card", "atm withdrawal", "foreign cards", "apple pay"],
+          "suggestedSource": "Local Tourism Federation Guide"
+        },
+        {
+          "id": "trv-travel-health",
+          "text": "Are vaccinations, compulsory medical evacuation insurance, or health declarations mandated?",
+          "defaultPriority": "high",
+          "topic": "Medical & Evacuation Insurance",
+          "whyItMatters": "Emergency medical treatment abroad without international evacuation coverage can cost $50,000+.",
+          "keywords": ["medical insurance", "evacuation", "vaccination", "health declaration", "emergency medical"],
+          "suggestedSource": "Ministry of Health Traveler Advisory"
+        }
+      ]
+    },
+    {
+      "id": "general-research",
+      "name": "General Research",
+      "icon": "Search",
+      "character": "shinchan",
+      "description": "Custom investigations for unmatched topics, scientific inquiries, policy audits, or news claims.",
+      "keywords": ["research", "investigation", "fact check", "policy", "scientific", "claim", "source"],
+      "suggestedPrompt": {
+        "topic": "Emerging AI Regulation and Data Privacy Compliance Standards",
+        "mainQuestion": "What are the enforcement dates, penalty frameworks, and sovereign exemption clauses?",
+        "objective": "Audit contradictory dates between draft whitepapers and enacted legislation, and identify unverified guidelines."
+      },
+      "questions": [
+        {
+          "id": "gen-primary-source",
+          "text": "What is the primary governing authority and official publication document date?",
+          "defaultPriority": "high",
+          "topic": "Primary Source Authenticity",
+          "whyItMatters": "Relying on secondary commentary or journalistic rewrites introduces subtle misinterpretations.",
+          "keywords": ["official source", "governing authority", "gazette", "published date", "enactment", "whitepaper"],
+          "suggestedSource": "Official Government / Regulatory Agency Portal"
+        },
+        {
+          "id": "gen-timeline-validity",
+          "text": "What are the effective enforcement dates, phase-in schedules, and compliance deadlines?",
+          "defaultPriority": "high",
+          "topic": "Enforcement Timeline",
+          "whyItMatters": "Proposed bill dates often differ significantly from enacted transition timetables.",
+          "keywords": ["effective date", "enforcement", "transition period", "compliance deadline", "grace period"],
+          "suggestedSource": "Statutory Implementation Schedule"
+        },
+        {
+          "id": "gen-penalties",
+          "text": "What are the statutory penalties, fines, or legal liabilities for non-compliance?",
+          "defaultPriority": "high",
+          "topic": "Penalties & Liability",
+          "whyItMatters": "Knowing whether violation entails administrative warnings vs multi-million dollar fines is critical.",
+          "keywords": ["penalty", "fine", "liability", "sanction", "enforcement mechanism", "punishment"],
+          "suggestedSource": "Enforcement Rules Section"
+        },
+        {
+          "id": "gen-scope-exclusions",
+          "text": "What entities, activities, or thresholds are explicitly exempt from these requirements?",
+          "defaultPriority": "medium",
+          "topic": "Exemptions & Scope",
+          "whyItMatters": "Small businesses, research institutes, or personal use are frequently exempted under safe harbor rules.",
+          "keywords": ["exemption", "safe harbor", "excluded", "scope", "threshold", "carve-out"],
+          "suggestedSource": "Applicability & Scope Clause"
+        },
+        {
+          "id": "gen-contradictions",
+          "text": "Do existing secondary sources present conflicting numbers, dates, or mandates?",
+          "defaultPriority": "medium",
+          "topic": "Conflicting Interpretations",
+          "whyItMatters": "News outlets often quote outdated draft iterations of legislation rather than the final bill.",
+          "keywords": ["conflicting", "dispute", "contrasting", "different claims", "controversy"],
+          "suggestedSource": "Comparative Legal Commentary"
+        },
+        {
+          "id": "gen-unanswered",
+          "text": "What essential operational procedures remain undefined or omitted from the documentation?",
+          "defaultPriority": "medium",
+          "topic": "Information Gaps",
+          "whyItMatters": "Undefined technical standards leave organizations vulnerable to arbitrary audits.",
+          "keywords": ["undefined", "omitted", "missing guideline", "silent on", "yet to clarify"],
+          "suggestedSource": "Regulatory Clarification Q&A"
+        },
+        {
+          "id": "gen-third-party-verification",
+          "text": "Has an independent audit or peer-reviewed assessment verified these claims?",
+          "defaultPriority": "low",
+          "topic": "Independent Verification",
+          "whyItMatters": "Self-serving press releases require external empirical validation.",
+          "keywords": ["independent audit", "peer-reviewed", "verification", "external evaluation", "empirical"],
+          "suggestedSource": "Independent Audit Report / Scholarly Journal"
+        },
+        {
+          "id": "gen-contact-escalation",
+          "text": "Is there a designated ombudsman, desk officer, or official channel for clarifications?",
+          "defaultPriority": "low",
+          "topic": "Direct Inquiries Channel",
+          "whyItMatters": "Ambiguous regulatory points require formal binding written guidance requests.",
+          "keywords": ["contact", "ombudsman", "official helpline", "inquiry desk", "binding opinion"],
+          "suggestedSource": "Agency Directory & Contact Information"
+        }
+      ]
+    }
+  ]
+}
